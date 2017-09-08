@@ -3,6 +3,13 @@ Prompt
 
 Prompt a keyboard interactive menu on your cli, and echo the selected option. 
 
+Install
+-------
+
+```shell
+go get github.com/bastienar/prompt
+```
+
 Usage
 -----
 
@@ -16,10 +23,3 @@ Validate or Cancel with <kbd>ENTER</kbd> or <kbd>CTRL</kbd> + <kbd>C</kbd>
 Menu is displayed in **Stderr**, selected option to **Stdout**
 
 ![screenshot](screenshot.gif)
-
-Install
--------
-
-```shell
-go get github.com/bastienar/prompt
-```
