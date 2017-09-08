@@ -1,4 +1,4 @@
-Prompt
+Prompt [![Build Status](https://travis-ci.org/BastienAr/prompt.svg)](https://travis-ci.org/BastienAr/prompt)
 ======
 
 Prompt a keyboard interactive menu on your cli, and echo the selected option. 
