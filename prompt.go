@@ -84,7 +84,18 @@ func selectDown(message string, choice int, options []string) (newchoice int) {
 	return newchoice
 }
 
+func printUsage() {
+	fmt.Println("Usage :\n\tprompt Message option1 option2 [...as much options you want]")
+	fmt.Println()
+	fmt.Println("\tExample")
+	fmt.Println("\tprompt \"Choose one:\" Farnsworth Rick \"Nerdelbaum Frink, Jr\"")
+}
+
 func main() {
+	if len(os.Args) < 4 {
+		printUsage()
+		os.Exit(1)
+	}
 	args := os.Args[1:]
 	options := args[1:]
 	message := args[0]
